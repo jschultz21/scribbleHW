@@ -1,0 +1,14 @@
+<h1>All the Scribble Posts!</h1>
+
+
+  <% @posts.each do |post| %>
+    <tr>
+      <h2><%= link_to post.title, post %></h2>
+      <p><%= post.text %></p>
+    </tr>
+  <% end %>
+</table>
+
+
+
+<h2><%= link_to "New Post", new_post_path %></h3>

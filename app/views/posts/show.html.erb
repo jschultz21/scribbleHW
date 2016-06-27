@@ -1,0 +1,29 @@
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @post.text %>
+</p>
+
+
+<!-- box to add comments -->
+
+<h1>ADD SOME COMMENTS YO</h1>
+
+<%= form_for @comment do |f| %>
+<p>
+  <%= f.label :body %><br>
+  <%= f.text_field :body %>
+</p>
+<p>
+  wut?
+</p>
+<p><%= f.submit "Add Comment"%></p>
+
+<% end %>
+
+
+<!-- SHOW comments -->
